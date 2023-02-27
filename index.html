@@ -1,47 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Results summary component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
 
-  Your Result
-  76
-  of 100
+  <main>
+    <article class="results">
+      <div class="results__display">
+        <h1 class="display__title">Your Result</h1>
+        <div class="display__score-container">
+          <span class="score-container__overall-score">76</span>
+          <span class="score-container__score-maximum">of 100</span>
+        </div>
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
+        <p class="comment__heading">Great</p>
+        <p class="comment__text">You scored higher than 65% of the people who have taken these tests.</p>
 
-  Reaction
-  80 / 100
+        <!-- <div class="display__comment">
+          <p class="comment__heading">Great</p>
+          <p class="comment__text">You scored higher than 65% of the people who have taken these tests.</p>
+        </div> -->
 
-  Memory
-  92 / 100
+      </div>
 
-  Verbal
-  61 / 100
+      <div class="results__summary">
+        <h2 class="summary__title">Summary</h2>
+        <div class="flex-group summary__item summary__item-red">
+          <span class="item__category" data-icon="icon-reaction">Reaction</span>
+          <span class="results"><span class="item__score">80</span> / 100</span>
+        </div>
+        <div class="flex-group summary__item summary__item-orange">
+          <span class="item__category" data-icon="icon-memory">Memory</span>
+          <span class="results"><span class="item__score">92</span> / 100</span>
+        </div>
+        <div class="flex-group summary__item summary__item-teal">
+          <span class="item__category" data-icon="icon-verbal">Verbal</span>
+          <span class="results"><span class="item__score">61</span> / 100</span>
+        </div>
+        <div class="flex-group summary__item summary__item-blue">
+          <span class="item__category" data-icon="icon-visual">Visual</span>
+          <span class="results"><span class="item__score">72</span> / 100</span>
+        </div>
+        <button class="button">Continue</button>
+      </div>
 
-  Visual
-  72 / 100
+    </article>
+  </main>
 
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
+
 </html>
