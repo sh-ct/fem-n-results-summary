@@ -82,10 +82,10 @@ h6 {
     --clr-neutral-400: hsl(241, 100%, 89%);
     --clr-neutral-800: hsl(224, 30%, 27%);
 
-    --clr-secondary-red: hsla(0, 100%, 67%, 20%);
-    --clr-secondary-orange: hsla(39, 100%, 56%, 20%);
-    --clr-secondary-teal: hsla(166, 100%, 37%, 20%);
-    --clr-secondary-blue: hsla(234, 85%, 45%, 20%);
+    --clr-secondary-red: hsla(0, 100%, 67%, 5%);
+    --clr-secondary-orange: hsla(39, 100%, 56%, 5%);
+    --clr-secondary-teal: hsla(166, 100%, 37%, 5%);
+    --clr-secondary-blue: hsla(234, 85%, 45%, 5%);
 
     --clr-secondary-red-text: hsl(0, 100%, 67%);
     --clr-secondary-orange-text: hsl(39, 100%, 56%);
@@ -211,7 +211,14 @@ body {
 }
 
 .item__results {
+  font-weight: var(--fw-bold);
   margin-left: auto;
+  color: grey;
+}
+
+.item__score {
+  font-weight: var(--fw-extra-bold);
+  color: black;
 }
 
 .summary__title {
